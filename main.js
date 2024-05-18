@@ -1,3 +1,5 @@
+// buggy script, please bugfix
+
 var fave = [
   
 ]
