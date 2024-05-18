@@ -1,3 +1,5 @@
+// use when bugfixing
+
 MPP.client.on("a", function (msg) {
 // define base thingies
 var args = msg.a.split(" ");
