@@ -1,3 +1,5 @@
+// just a "show to the brazillian users" version
+
 MPP.client.on("a", function (msg) {
 // define base thingies
 var args = msg.a.split(" ");
