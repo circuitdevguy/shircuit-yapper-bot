@@ -1,0 +1,13 @@
+qt - quick thinks
+
+(do a) bcf - (do a) buggy code fix
+
+cmdb - command bug
+
+msg - message
+
+p - player
+
+# - hex
+
+rtt - return to topic
