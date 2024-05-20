@@ -1,11 +1,3 @@
-// buggy script, please bugfix
-
-var fave = [
-  
-]
-var faveids = [
-  
-]
 MPP.client.on("a", function (msg) {
 // define base thingies
 var args = msg.a.split(" ");
@@ -19,22 +11,11 @@ if (cmd === "yap.topic") {
 		sendChat("guys let's talk about the number " + Math.floor(Math.random()*100));
 	}
 }
-// favenuming is cool ngl
-if (cmd === "yap.favenum") {
-  if (args.length == 0) {
-		if (fave[faveids.indexOf(msg.p.id)] == -1) {
-			sendChat("you don't have a favenum!");
-    } else {
-			sendChat("your favenum is " + fave[faveids.indexOf(msg.p.id)]);
-    }
-  	} else {
-    	sendChat("cool favenum! your favenum was changed!")
-    if (fave[faveids.indexOf(msg.p.id)] == -1) {
-      faveids.push(msg.p.id)
-      fave.push(msg.a.substring(11).trim());
-    } else {
-      fave[faveids.indexOf(msg.p.id)] = msg.a.substring(11).trim();
-    }
-  }
+if (cmd === "yap.amidev") {
+	if (devs.indexOf(msg.p.id) == -1) {
+		sendChat("You're... (drumroll) ||NOT a yapper dev! \*crowd gasp*||")
+	} else {
+		sendChat("You're... (drumroll) ||YES a yapper dev! \*crowd gasp*||")
+	}
 }
 });
