@@ -1,3 +1,6 @@
+var devs = [
+	"6420abac45caf6db5876e564"
+]
 MPP.client.on("a", function (msg) {
 // define base thingies
 var args = msg.a.split(" ");
@@ -17,5 +20,11 @@ if (cmd === "yap.amidev") {
 	} else {
 		sendChat("You're... (drumroll) ||YES a yapper dev! \*crowd gasp*||")
 	}
+}
+if (cmd === "yap.source") {
+	sendChat("follow my development via GitHub at https://github.com/circuitdevguy/shircuit-yapper-bot!")
+}
+if (cmd === "yap.help") {
+	sendChat("Yapper of the Yappington commands! yap.source, yap.amidev, yap.topic") // update with each new command
 }
 });
