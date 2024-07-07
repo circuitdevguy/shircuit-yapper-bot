@@ -1,5 +1,5 @@
 var devs = [
-	"6420abac45caf6db5876e564"
+	"d2c18e62fc86fd96c1c845b7",
 ]
 MPP.client.on("a", function (msg) {
 // define base thingies
