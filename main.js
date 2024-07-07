@@ -22,7 +22,7 @@ if (cmd === "yap.amidev") {
 	}
 }
 if (cmd === "yap.source") {
-	sendChat("follow my development via GitHub at https://github.com/circuitdevguy/shircuit-yapper-bot!")
+	sendChat("follow my development via GitHub at https://github.com/circuitdevguy/shircuit-yapper-bot")
 }
 if (cmd === "yap.help") {
 	sendChat("Yapper of the Yappington commands! yap.source, yap.amidev, yap.topic") // update with each new command
