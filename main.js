@@ -7,9 +7,7 @@ var sendChat = function(msg) { MPP.chat.send(msg) };
 var name = msg.p.name;
 // make new topic to yap about
 if (cmd === "yap.topic") {
-	if (msg.p.id === "6420abac45caf6db5876e564" || msg.p.id === "ebb6dfa96f1714ce66f648ad") {
-		sendChat("guys let's talk about the number " + Math.floor(Math.random()*100));
-	}
+	sendChat("guys let's talk about the number " + Math.floor(Math.random()*100));
 }
 if (cmd === "yap.source") {
 	sendChat("follow my development via GitHub at https://github.com/circuitdevguy/shircuit-yapper-bot")
