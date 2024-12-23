@@ -1,6 +1,3 @@
-var devs = [
-	"d2c18e62fc86fd96c1c845b7",
-]
 MPP.client.on("a", function (msg) {
 // define base thingies
 var args = msg.a.split(" ");
@@ -14,17 +11,10 @@ if (cmd === "yap.topic") {
 		sendChat("guys let's talk about the number " + Math.floor(Math.random()*100));
 	}
 }
-if (cmd === "yap.amidev") {
-	if (devs.indexOf(msg.p.id) == -1) {
-		sendChat("You're... (drumroll) ||NOT a yapper dev! \*crowd gasp*||")
-	} else {
-		sendChat("You're... (drumroll) ||YES a yapper dev! \*crowd gasp*||")
-	}
-}
 if (cmd === "yap.source") {
 	sendChat("follow my development via GitHub at https://github.com/circuitdevguy/shircuit-yapper-bot")
 }
 if (cmd === "yap.help") {
-	sendChat("Yapper of the Yappington commands! yap.source, yap.amidev, yap.topic") // update with each new command
+	sendChat("i have lots of commands, check them out in this list my developer provided conveniently for you! yap.source, yap.amidev, yap.topic") // update with each new command
 }
 });
